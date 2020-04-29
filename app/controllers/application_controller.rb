@@ -1,4 +1,3 @@
-  
 require './config/environment'
 require 'sinatra/base'
 require 'rack-flash'

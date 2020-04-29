@@ -1,11 +1,6 @@
-<h2>
-  Tweets by <%= @user.username %>
-</h2>
-
+<h1><%= @user.username %>'s Tweets</h1>
+<% @user.tweets.each do |tweet| %>
 <ul>
-  <% @user.tweets.all.each do |tweet| %>
-    <li>
-      <%= tweet.content %>
-    </li>
-  <% end %>
+  <li><%= tweet.content %></li>
 </ul>
+<% end %>
